@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <link href="./css/layout.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+    <br>
+    <div id="webcampanel">
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    </div>
+    <br>
+    <div id="panel">
+    <button id="class-a" style="background-color:#f14e4e">Class A</button>
+    <button id="class-b" style="background-color:#84f14e">Class B</button>
+    <button id="class-c" style="background-color:#f1bb4e">Class C</button>
+    </div>
+    <!-- Load index.js after the content of the page -->
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
